@@ -1963,11 +1963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
+      "projectUniqueName": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
       "projectName": "BakeliteFormulation.Android",
-      "projectPath": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
+      "projectPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
       "packagesPath": "C:\\Users\\it\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation.Android\\obj\\",
+      "outputPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1988,8 +1988,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation\\BakeliteFormulation.csproj": {
-              "projectPath": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation\\BakeliteFormulation.csproj"
+            "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj": {
+              "projectPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj"
             }
           }
         }

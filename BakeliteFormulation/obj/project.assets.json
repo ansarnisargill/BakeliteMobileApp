@@ -599,11 +599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation\\BakeliteFormulation.csproj",
+      "projectUniqueName": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj",
       "projectName": "BakeliteFormulation",
-      "projectPath": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation\\BakeliteFormulation.csproj",
+      "projectPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj",
       "packagesPath": "C:\\Users\\it\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\it\\Desktop\\BakeliteFormulation\\BakeliteFormulation\\obj\\",
+      "outputPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

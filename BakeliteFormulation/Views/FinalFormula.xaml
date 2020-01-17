@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BakeliteFormulation.Views.FinalFormula" Appearing="ContentPage_Appearing">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="صاف کریں"  x:Name="BTNClear" Clicked="BTNClear_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+
+
+
+                </Grid.RowDefinitions>
+                <Label Text=":ٹوٹل وزن" x:Name="lblTotalWeight" FontSize="Title" Grid.Column="0" Grid.Row="0" />
+                <Label x:Name="TotalBakeliteWeight" Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" TextColor="Teal" FontSize="Title" />
+                <Label Text=":ٹوٹل رقم" FontSize="Title" x:Name="lbltotalPrice"  Grid.Column="0" Grid.Row="1" />
+                <Label x:Name="TotalPrice" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="1" TextColor="Teal" FontSize="Title" />
+
+                <Label Text=":کاٹ" x:Name="lblkaat" FontSize="Title" Grid.Column="0" Grid.Row="2"  />
+                <Entry x:Name="TBKaat" FontSize="Title" TextChanged="TBKaat_TextChanged" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center" Margin="20,0,20,0" TextColor="Teal" Keyboard="Numeric"/>
+                <Label Text=":اخراجات" FontSize="Title" x:Name="lblAkhrajaat" Grid.Column="0" Grid.Row="3"  />
+                <Entry x:Name="TBElectricity" FontSize="Title" TextChanged="TBElectricity_TextChanged" Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center" TextColor="Teal" Margin="20,0,20,0" Keyboard="Numeric"/>
+                <Label Text=":فائنل وزن" FontSize="Title" x:Name="lblFinalWazan" Grid.Column="0" Grid.Row="4" />
+                <Label x:Name="FinalWeight" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="4" TextColor="Green" FontSize="Title" />
+           
+                <Label x:Name="FinalPrice" HorizontalOptions="CenterAndExpand" TextColor="Green" FontSize="Title" Grid.Column="1" Grid.Row="5" />
+                <Label Text=":فائنل رقم " FontSize="Title" x:Name="lblFinalRaqam" Grid.Column="0" Grid.Row="5" />
+                <Label x:Name="PerKGPrice" TextColor="Teal" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="6" FontSize="Title" />
+                <Label Text=":فی کلو ریٹ" FontSize="Title" x:Name="lblFiKiloRate" Grid.Column="0" Grid.Row="6" />
+                <Label x:Name="lblBagSize" Text=":بیگ سائز" Grid.Column="0" Grid.Row="7" FontSize="Title" />
+                <Entry x:Name="TBBagSize" Text="50"  FontSize="Title" Grid.Column="1" Grid.Row="7" TextChanged="TBBagSize_TextChanged" HorizontalTextAlignment="Center" TextColor="Teal" Margin="20,0,20,0" Keyboard="Numeric"/>
+                <Label Text=":بیگ ریٹ" x:Name="lblBagRate" FontSize="Title" Grid.Column="0" Grid.Row="8" />
+                <Label x:Name="FinalBagRate" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="8" TextColor="Green" FontSize="Title" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
