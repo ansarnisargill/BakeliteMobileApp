@@ -26,6 +26,8 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
 
 
 
@@ -50,6 +52,11 @@
                 <Entry x:Name="TBBagSize" Text="50"  FontSize="Title" Grid.Column="1" Grid.Row="7" TextChanged="TBBagSize_TextChanged" HorizontalTextAlignment="Center" TextColor="Teal" Margin="20,0,20,0" Keyboard="Numeric"/>
                 <Label Text=":بیگ ریٹ" x:Name="lblBagRate" FontSize="Title" Grid.Column="0" Grid.Row="8" />
                 <Label x:Name="FinalBagRate" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="8" TextColor="Green" FontSize="Title" />
+                <Label x:Name="lblExtraBagExpense" Text=":کرایہ+توڑا" Grid.Column="0" Grid.Row="9" FontSize="Title" />
+                <Entry x:Name="TBExtraBagExpense" Text="0"  FontSize="Title" Grid.Column="1" Grid.Row="9" TextChanged="TBExtraBagExpense_TextChanged"  HorizontalTextAlignment="Center" TextColor="Teal" Margin="20,0,20,0" Keyboard="Numeric"/>
+
+                <Label Text=":فاءینل بیگ قیمت" x:Name="lblTotallyFinalBagRate" FontSize="Title" Grid.Column="0" Grid.Row="10" />
+                <Label x:Name="TotallyFinalBagRate" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="10" TextColor="Green" FontSize="Title" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -1957,24 +1957,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\it\\.nuget\\packages\\": {},
+    "C:\\Users\\ansar.nisar\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
+      "projectUniqueName": "C:\\Projects\\GIT\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
       "projectName": "BakeliteFormulation.Android",
-      "projectPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
-      "packagesPath": "C:\\Users\\it\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation.Android\\obj\\",
+      "projectPath": "C:\\Projects\\GIT\\BakeliteMobileApp\\BakeliteFormulation.Android\\BakeliteFormulation.Android.csproj",
+      "packagesPath": "C:\\Users\\ansar.nisar\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\GIT\\BakeliteMobileApp\\BakeliteFormulation.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\it\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ansar.nisar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1988,8 +1988,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj": {
-              "projectPath": "C:\\Users\\it\\Desktop\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj"
+            "C:\\Projects\\GIT\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj": {
+              "projectPath": "C:\\Projects\\GIT\\BakeliteMobileApp\\BakeliteFormulation\\BakeliteFormulation.csproj"
             }
           }
         }

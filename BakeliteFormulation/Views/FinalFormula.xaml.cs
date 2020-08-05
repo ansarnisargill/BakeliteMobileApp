@@ -24,7 +24,7 @@ namespace BakeliteFormulation.Views
 
         private void ContentPage_Appearing(object sender, EventArgs e)
         {
-            FontHelper.SetUrduFont(new List<Label>() { lblkaat, lbltotalPrice, lblTotalWeight, lblAkhrajaat, lblFinalWazan, lblFinalRaqam, lblFiKiloRate, lblBagSize, lblBagRate });
+            FontHelper.SetUrduFont(new List<Label>() { lblkaat, lbltotalPrice, lblTotalWeight, lblAkhrajaat, lblFinalWazan, lblFinalRaqam, lblFiKiloRate, lblBagSize, lblBagRate, lblExtraBagExpense, lblTotallyFinalBagRate });
             FinalWeight.Text = TotalBakeliteWeight.Text = this.Products.Sum(x => x.Weight).ToString() + " KG";
             FinalPrice.Text = TotalPrice.Text = this.Products.Sum(x => x.Total).ToString() + " Rs.";
             CalculatePerKGRate();
@@ -49,7 +49,7 @@ namespace BakeliteFormulation.Views
             {
                 bills = 0;
             }
-            FinalPrice.Text = (this.Products.Sum(x => x.Total) + bills).ToString() + " Rs.";
+            FinalPrice.Text = (Math.Ceiling(this.Products.Sum(x => x.Total) + bills)).ToString() + " Rs.";
             CalculatePerKGRate();
             CalculatePerBagPrice();
 
@@ -58,7 +58,7 @@ namespace BakeliteFormulation.Views
         {
             var FinalP = float.Parse(FinalPrice.Text.Split(' ')[0]);
             var FinalW = float.Parse(FinalWeight.Text.Split(' ')[0]);
-            PerKGPrice.Text = Math.Round((FinalP / FinalW), 2).ToString() + " Rs.";
+            PerKGPrice.Text = Math.Ceiling((FinalP / FinalW)).ToString() + " Rs.";
            
         }
         private void CalculatePerBagPrice()
@@ -67,7 +67,15 @@ namespace BakeliteFormulation.Views
             {
                 BagSize = 0;
             }
-            FinalBagRate.Text = Math.Round((float.Parse(PerKGPrice.Text.Split(' ')[0]) * BagSize), 2).ToString() + " Rs.";
+            FinalBagRate.Text = Math.Ceiling((float.Parse(PerKGPrice.Text.Split(' ')[0]) * BagSize)).ToString() + " Rs.";
+
+
+            if (!float.TryParse(TBExtraBagExpense.Text, out float ExtraBagExpense))
+            {
+                ExtraBagExpense = 0;
+            }
+            TotallyFinalBagRate.Text = Math.Ceiling((float.Parse(PerKGPrice.Text.Split(' ')[0]) * BagSize)+ ExtraBagExpense).ToString() + " Rs.";
+
         }
 
         private void TBBagSize_TextChanged(object sender, TextChangedEventArgs e)
@@ -79,6 +87,11 @@ namespace BakeliteFormulation.Views
         {
             Flags.ClearGrid = true;
            await Navigation.PopAsync();
+        }
+
+        private void TBExtraBagExpense_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CalculatePerBagPrice();
         }
     }
 }
